@@ -3,7 +3,7 @@ package Classes;
 public class ReverseHello {
     public static void main(String[] args) throws InterruptedException {
 
-        ThreadHello t01 = new ThreadHello();
+        THello t01 = new THello();
 
         Thread t = new Thread(t01);
         t.start();
@@ -11,7 +11,7 @@ public class ReverseHello {
     }
 }
 
-class ThreadHello implements Runnable {
+class THello implements Runnable {
 
     private void greetingsFrom(int threadNo){
         System.out.println("Hello from " + threadNo);
