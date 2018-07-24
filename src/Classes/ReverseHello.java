@@ -22,11 +22,11 @@ class THello implements Runnable {
         Thread thread;
         for (int i = 1; i < 51; i++) {
             thread = new Thread(this);
-            try {
-                thread.join();
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
+         //   try {
+         //       thread.join();
+         //   } catch (InterruptedException e) {
+         //       e.printStackTrace();
+         //   }
             greetingsFrom(i);
         }
     }
